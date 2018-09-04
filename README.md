@@ -1,20 +1,82 @@
-# Memory Game Project
+# Memory Game Udacity - Sara. C 
+
+Udacity Front-End Web Developer Nanodegree Part 2 Project: Memory Game.
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* Getting Started 
+* Instructions to play 
+* Prerequisites 
+* Specifications
+* Built Tools 
 * [Contributing](#contributing)
 
-## Instructions
+## Getting Started 
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This project is only available for the web. The Memory Game was built to show the amount of skill obtained by taking the nano-degree course. 
 
-To get started, open `js/app.js` and start building out the app's functionality
+The project is available on GitHub
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Game Instructions
+
+The game has 16 cards on the deck. Each card has a different icon with another pair. The player must match each card with their respective pair to successfully win the game. A modal will show after all cards are marched to show the time it took, the moves and the star rating the player received. 
+
+
+## Prerequisites 
+
+To install this game, you must simply download the repository to your desktop. A coding editor is needed for a further review into the code. 
+
+## Specifications
+
+**ShuffleDeck**
+
+There is a function which shuffles the game on each retry the player decides to take. 
+
+**Game Logic**
+
+The game is matched using the icons of each card. The player must match each card. 
+
+**Modal**
+
+After the user wins the modal will show, which provides information about that specific play. 
+
+**Restart Button**
+
+The restart button will restart the entire game. 
+
+**Star Rating**
+
+There is a star rating from 1 to 3 stars. 
+
+**Timer**
+
+As soon as the player clicks on a card the timer will start. 
+
+**Move Counter**
+
+Each time a card is clicked the move count goes up by 1. 
+
+**Interface**
+
+The interface has been modified to work on the Ipad and web. 
+
+###All Documentation
+
+**README**
+
+A README file is included detailing the game and all dependencies.
+
+**Comments**
+
+Comments are explanatory throughout the code. 
+
+
+## Acknowledgements
+
+* [JQuery](https://jquery.com/)
+* [stackoverflow](https://stackoverflow.com/) 
+* [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
 
 ## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+Pull request will not be merged into the project.
