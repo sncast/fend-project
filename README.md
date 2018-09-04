@@ -9,7 +9,7 @@ Udacity Front-End Web Developer Nanodegree Part 2 Project: Memory Game.
 * Prerequisites 
 * Specifications
 * Built Tools 
-* [Contributing](#contributing)
+* [Contributing.md](#contributing)
 
 ## Getting Started 
 
