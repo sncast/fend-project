@@ -46,7 +46,7 @@ function moveCounter() {
 }
 
 
-//Shuffle the deck!
+//Shuffle the deck! This shuffle function was taken from https://matthewcranford.com/memory-game-walkthrough-part-4-setup/
 function shuffleDeck() {
   const cardsToShuffle = Array.from(document.querySelectorAll('.deck li'));
   const shuffledCards = shuffle(cardsToShuffle);
@@ -92,7 +92,7 @@ function isClickValid(clickTarget) {
   );
 }
 
-//Function checks if cards match 
+//Function checks if cards match - Was modified using Mat. Crawford Description to https://matthewcranford.com/memory-game-walkthrough-part-1-setup/
 function checkForMatch() {
   if (
     openCardList[0].firstElementChild.className ===
@@ -244,7 +244,7 @@ function checkWin() {
     console.log("The game is won");
     gameOver();
     finalTime = Timer.innerHTML;
-    // show congratulations modal
+    // show congratulations modal. Modal basic template came from https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript 
     modal.classList.add("show");
 
     // declare star rating variable
