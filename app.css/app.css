@@ -60,9 +60,7 @@ h1 {
   box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
   display: flex;
   flex-wrap: wrap;
-  flex-align: center;
   justify-content: space-between;
-  box-align: center;
   align-items: center;
   margin: 15 0 3em;
   margin-left: 18%;
