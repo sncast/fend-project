@@ -60,7 +60,7 @@ Each time a card is clicked the move count goes up by 1.
 
 The interface has been modified to work on the Ipad and web. 
 
-###All Documentation
+**All Documentation**
 
 **README**
 
