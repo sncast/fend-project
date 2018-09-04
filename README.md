@@ -8,7 +8,6 @@ Udacity Front-End Web Developer Nanodegree Part 2 Project: Memory Game.
 * Instructions to play 
 * Prerequisites 
 * Specifications
-* Built Tools 
 * Contributing
 
 ## Getting Started 
@@ -59,8 +58,6 @@ Each time a card is clicked the move count goes up by 1.
 **Interface**
 
 The interface has been modified to work on the Ipad and web. 
-
-**All Documentation**
 
 **README**
 
