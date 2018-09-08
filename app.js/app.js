@@ -23,8 +23,6 @@ var reset = document.getElementById('button-reset');
 var Interval;
 
 //adds a move if a card is clicked
-$('.deck').on('click', '.card', moveCounter)
-
 function moveCounter() {
   moves++;
   counter.innerHTML = moves;
@@ -79,6 +77,7 @@ deck.addEventListener('click', event => {
     addToggleCard(clickTarget);
     if (openCardList.length === 2) {
       checkForMatch(clickTarget);
+      moveCounter()
     }
   }
 });
@@ -103,6 +102,7 @@ function checkForMatch() {
       openCardList[1].classList.toggle('match');
       openCardList = [];
       setTimeout(function () {
+        matched++;
         checkWin();
       }, 1000);
     }, 800);
@@ -156,6 +156,7 @@ reset.onclick = function startAgain() {
   appendTens.innerHTML = tens;
   appendSeconds.innerHTML = seconds;
   openCardList = [];
+  matched = 0;
   resetStars();
   resetCards()
   shuffleDeck()
@@ -169,6 +170,7 @@ function retry() {
   appendTens.innerHTML = tens;
   appendSeconds.innerHTML = seconds;
   openCardList = [];
+  matched = 0;
   resetStars();
   resetCards();
   shuffleDeck()
@@ -223,11 +225,6 @@ function gameOver() {
 
 }
 
-if (matched === 8) {
-  gameOver()
-  console.log("the game is won!")
-}
-
 //resets the cards back to their original class
 
 function resetCards() {
@@ -240,7 +237,9 @@ function resetCards() {
 //function that checks if all cards are matched
 function checkWin() {
   matched += 1;
-  if (matched === 8) {
+  if (matched === 16) {
+      openCardList = [];
+      matched === 0;
     console.log("The game is won");
     gameOver();
     finalTime = Timer.innerHTML;
