@@ -1,6 +1,6 @@
-# Memory Game Udacity - Sara. C 
+# Arcade Game Udacity - Sara. C 
 
-Udacity Front-End Web Developer Nanodegree Part 2 Project: Memory Game.
+Udacity Front-End Web Developer Nanodegree Part 3 Project: Arcade Game.
 
 ## Table of Contents
 
@@ -12,44 +12,40 @@ Udacity Front-End Web Developer Nanodegree Part 2 Project: Memory Game.
 
 ## Getting Started 
 
-This project is only available for the web. The Memory Game was built to show the amount of skill obtained by taking the nano-degree course. 
+This project is only available for the web. The arcade game was built to show the amount of skill obtained by taking the nano-degree course. 
 
-The project is available on GitHub
+The project will be available on GitHub
 
 ## Game Instructions
 
-The game has 16 cards on the deck. Each card has a different icon with another pair. The player must match each card with their respective pair to successfully win the game. A modal will show after all cards are marched to show the time it took, the moves and the star rating the player received. 
+The arcade game is simple to play. Use the arrow keys on your keyboard to move forward, backward and left and right. Try to avoid the enemies (bugs) and reach the finish line. By making 1 step to the last row you will move to the next level! After 3 levels you will win the game. 
 
 
 ## Prerequisites 
 
-To install this game, you must simply download the repository to your desktop. A coding editor is needed for a further review into the code. 
+To install this game, you must simply download the repository to your desktop. A coding editor is needed for a further review into the code. Use your favorite browser to open the game. 
 
 ## Specifications
 
-**ShuffleDeck**
+**Allowed Keys**
 
-There is a function which shuffles the game on each retry the player decides to take. 
+Listens for key presses so that it could be used accordingly with the player.handleInput() 
 
 **Game Logic**
 
-The game is matched using the icons of each card. The player must match each card. 
+When the character is in the same x and y-axis as the enemy, they will collide. The character will move back to the starting point. 
 
-**Modal**
+**Results**
 
-After the user wins the modal will show, which provides information about that specific play. 
+After the user wins a text will appear with the words "You Win!". 
 
-**Restart Button**
+**Restart**
 
-The restart button will restart the entire game. 
+The game will restart on its own after the game is won. 
 
-**Star Rating**
+**Speed**
 
-There is a star rating from 1 to 3 stars. 
-
-**Timer**
-
-As soon as the player clicks on a card the timer will start. 
+The speed of the player and enemies is consistent throughout the game.  
 
 **Move Counter**
 
@@ -57,7 +53,7 @@ Each time a card is clicked the move count goes up by 1.
 
 **Interface**
 
-The interface has been modified to work on the Ipad and web. 
+The interface is modified to only work on PC. 
 
 **README**
 
