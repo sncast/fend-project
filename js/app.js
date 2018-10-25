@@ -1,3 +1,5 @@
+
+
 const Level = document.getElementById('myp');
 const win = document.getElementById('myh');
 
@@ -22,8 +24,6 @@ class Character {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
-    //Matthew Crawford's arcade game walkthrough was used to get a basic start on collision and enemy rendering
-    
     //Handles collision between enemies 
     update() {
         for (let enemy of allEnemies) {
@@ -38,8 +38,8 @@ class Character {
                 this.reset();
 
             };
-            
-            //Mentor Please check!!!
+            //Matthew Crawford's arcade game walkthrough was used to get a basic start on collision and enemy rendering
+
             //Shows when the player wins after level 3 has been reached
 
             if (this.y === 17) {
@@ -144,6 +144,3 @@ const enemy9 = new Enemy((-301 * 3.5), 83, 300);
 const allEnemies = [];
 allEnemies.push(enemy1, enemy2, enemy3, enemy4, enemy5, enemy6, enemy7, enemy8, enemy9);
 const player = new Character();
-
-
-
